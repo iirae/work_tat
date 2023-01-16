@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/NotoSansKR-Light.woff2") format("woff2"), url("../fonts/NotoSansKR-Light.woff") format("woff"), url("../fonts/NotoSansKR-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NotoSansKR-Regular.woff2") format("woff2"), url("../fonts/NotoSansKR-Regular.woff") format("woff"), url("../fonts/NotoSansKR-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/NotoSansKR-Medium.woff2") format("woff2"), url("../fonts/NotoSansKR-Medium.woff") format("woff"), url("../fonts/NotoSansKR-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NotoSansKR-Bold.woff2") format("woff2"), url("../fonts/NotoSansKR-Bold.woff") format("woff"), url("../fonts/NotoSansKR-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nimbus San L";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/NimbusSanL-Reg.woff2") format("woff2"), url("../fonts/NimbusSanL-Reg.woff") format("woff"), url("../fonts/NimbusSanL-Reg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Nimbus San L";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/NimbusSanL-Bol.woff2") format("woff2"), url("../fonts/NimbusSanL-Bol.woff") format("woff"), url("../fonts/NimbusSanL-Bol.ttf") format("truetype");
+}
+
+/* reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, textarea, button {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset, img {
+  border: 0 none;
+}
+
+dl, ul, ol, menu, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+input, select, textarea, button {
+  vertical-align: middle;
+  font-size: 100%;
+}
+
+button {
+  border: 0 none;
+  border-radius: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+input, button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: checkbox;
+}
+
+input[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+input, textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background: #fff;
+}
+
+html, body {
+  min-height: 100%;
+  min-height: -webkit-fill-available;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: none;
+}
+
+address, caption, cite, code, dfn, em, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+}
+
+a, button {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrap {
+  position: relative;
+  padding: 22px;
+  height: 100%;
+  background: #fefdee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.logo {
+  z-index: 10;
+  position: absolute;
+  bottom: 8px;
+  right: 47px;
+  width: 210px;
+  height: 36px;
+  background: #fefdee;
+}
+
+.contents {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  border: 3px solid #c62026;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contents::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  display: block;
+  width: 3px;
+  height: 100%;
+  background: #c62026;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.origin {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.section {
+  padding: 20px 25px 10px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 50%;
+  font-size: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.section .title {
+  position: relative;
+  font-size: 39px;
+  line-height: 1;
+}
+
+.section .title::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #c62026;
+}
+
+.section .title span {
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  padding-right: 23px;
+  background: #fefdee;
+}
+
+.section ul {
+  margin-top: 21px;
+}
+
+.section li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 1;
+}
+
+.section li + li {
+  margin-top: 14px;
+}
+
+.section .info {
+  margin-top: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 100%;
+  font-size: 19px;
+  color: #c91019;
+  line-height: 1.27;
+}
+
+.section .name .en {
+  margin-left: 10px;
+  font-size: 19px;
+  color: #c91019;
+}
+
+.section .price {
+  font-weight: 700;
+}
+
+.section.origin .title {
+  font-size: 26px;
+}
+
+.section.origin dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.section.origin dl > div + div {
+  margin-left: 30px;
+}
+
+.section.origin dt {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.section.origin dd {
+  font-size: 17px;
+  line-height: 1.67;
+}
+
+.section.origin ul {
+  margin-top: 12px;
+}
+
+body {
+  background: #fff;
+}
+
+body, th, td, input, select, textarea, button {
+  font-size: 10px;
+  line-height: 1.25;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #c62026;
+}
+
+a {
+  color: #c62026;
+}
+
+.blind {
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  color: transparent;
+}
+
+.notch {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: env(safe-area-inset-bottom);
+  bottom: constant(safe-area-inset-bottom);
+  background: #f8f8f8;
+}
+
+pre {
+  white-space: pre-wrap;
+}
