@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover, initial-scale=1.0" />
+        <meta name="title" content="TNT Wine Finder" />
+        <meta name="author" content="TNT" />
+        <meta name="copyright" content="TNT" />
+        <title>TASTE AND TASTE</title>
+        <link rel="stylesheet" href="../resources/css/common.css" />
+    </head>
+    <body>
+        <div class="wrap p-main" id="wrap">
+            <div class="fixed-header">
+                <header class="header" id="header">
+                    <h1 class="logo"><img src="../resources/images/logo.svg" alt="TASTE AND TASTE Wine Finder"></h1>
+                </header>
+                <div class="filter">
+                    <h2 class="blind">와인 필터링</h2>
+                    <!-- 선택된 필터가 있을 시 active 클래스 추가 -->
+                    <div class="selected-condition active">
+                        <button type="button" class="btn-icon reset" title="필터 조건 초기화"></button>
+                        <ul>
+                            <li><span>이탈리아</span><button type="button" class="btn-icon delete"></button></li>
+                            <li><span>캐나다</span><button type="button" class="btn-icon delete"></button></li>
+                        </ul>
+                    </div>
+                    <div class="first list">
+                        <!-- 클릭 시 active 클래스 추가 -->
+                        <button type="button" class="on">TAT MD’S PICK</button>
+                        <button type="button" class="on">STEADY</button>
+                        <button type="button">SNS</button>
+                        <button type="button" class="on">와인분류</button>
+                        <button type="button">포도품종</button>
+                        <button type="button" class="">원산지 <span class="num">3</span></button>
+                        <button type="button">산도</button>
+                        <button type="button">당도</button>
+                        <button type="button">탄닌</button>
+                        <button type="button">바디</button>
+                    </div>
+                    <!-- 1depth 선택 시 active 클래스 추가 -->
+                    <div class="second">
+                        <h3 class="title">떼루아에 따라 달라지는 와인의 맛과 멋!</h3>
+                        <p class="desc">생산국가에 따른 특징이 궁금하신가요? TAT 직원에게 문의해주세요. :)</p>
+                        <ul class="f-group type-button">
+                            <li class="f-chk"><input type="checkbox" id="nat01"><label for="nat01">이탈리아</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat02"><label for="nat02">프랑스</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat03"><label for="nat03">독일</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat04"><label for="nat04">오스트레일리아</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat05"><label for="nat05">스페인</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat06"><label for="nat06">체코</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat07"><label for="nat07">칠레</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat08"><label for="nat08">미국</label></li>
+                            <li class="f-chk"><input type="checkbox" id="nat09"><label for="nat09">캐나다</label></li>
+                        </ul>
+                        <button class="btn-icon close e-close" title="닫기"></button>
+                    </div>
+                </div>
+                <!-- // filter -->
+            </div>
+
+            <main class="contents" id="contents">
+                <div class="ctrl">
+                    <div class="sort">
+                        <button type="button" class="active">이름순</button>
+                        <button type="button">높은 가격순</button>
+                        <button type="button">낮은 가격순</button>
+                    </div>
+                    <button class="btn-icon list-type" title="리스트 형태 변경" onclick="changeListType(event)"></button>
+                </div>
+
+                <div class="list-wrap">
+                    <div class="empty">
+                        <h3 class="title">원하는 조건의 와인이 발견되지 않습니다.</h3>
+                        <p class="desc">TAT의 MD가 강력추천하는 와인들을 확인해 보시겟어요?</p>
+                        <span><i class="icon wine"></i></span>
+                    </div>
+    
+                    <ul class="wine-list">
+                        <!-- 반복 -->
+                        <li>
+                            <a href="javascript:;">
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                                    <div class="badges">
+                                        <em class="badge">TAT MD’S PICK</em>
+                                        <em class="badge">STEADY</em>
+                                    </div>
+                                    <em class="badge location">12</em>
+                                </div>
+                                <div class="details">
+                                    <strong class="name">발리 우니테 - 안세스트랄 비앙코 일 브루토 앤 더 안세스트랄 비앙코 일 브루토 앤 더</strong>
+                                    <ul class="group">
+                                        <li>#로제와인</li>
+                                        <li>#이탈리아</li>
+                                        <li>#내츄럴</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li><!-- //반복 -->
+                        <li>
+                            <a href="javascript:;">
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                                    <div class="badges">
+                                        <em class="badge">TAT MD’S PICK</em>
+                                        <em class="badge">STEADY</em>
+                                    </div>
+                                    <em class="badge location">12</em>
+                                </div>
+                                <div class="details">
+                                    <strong class="name">발리 우니테 - 안세스트랄 비앙코 일 브루토 앤 더 안세스트랄 비앙코 일 브루토 앤 더</strong>
+                                    <ul class="group">
+                                        <li>#로제와인</li>
+                                        <li>#이탈리아</li>
+                                        <li>#내츄럴</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="image">
+                                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2luZXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="">
+                                    <div class="badges">
+                                        <em class="badge">TAT MD’S PICK</em>
+                                        <em class="badge">STEADY</em>
+                                    </div>
+                                    <em class="badge location">12</em>
+                                </div>
+                                <div class="details">
+                                    <strong class="name">발리 우니테 - 안세스트랄 비앙코 일 브루토 앤 더 안세스트랄 비앙코 일 브루토 앤 더</strong>
+                                    <ul class="group">
+                                        <li>#로제와인</li>
+                                        <li>#이탈리아</li>
+                                        <li>#내츄럴</li>
+                                    </ul>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+    
+                </div>
+
+            </main>
+
+            <footer class="footer" id="footer">
+                <a href="" class="btn-icon instagram"></a>
+                <p class="copyright">COPYRIGHT © 2021. TASTEANDTASTE. ALL RIGHTS RESERVED.</p>
+            </footer>
+
+        </div>
+
+        <script src="../resources/js/ui.js"></script>
+        <script>
+        document.addEventListener("DOMContentLoaded", function(e){
+            let firstButtons = document.querySelectorAll('.first button');
+            let closeButton = document.querySelector('.e-close');
+
+            for(const firstButton of firstButtons) {
+                firstButton.addEventListener("click", function(event){
+                    event.preventDefault();
+                    clickFilter(event);
+                    scrollFilter(event);
+                });
+            }
+
+            closeButton.addEventListener("click", function(event){
+                event.preventDefault();
+                closeFilter(event);
+            });
+
+        });
+
+        function changeListType(event) {
+            event.preventDefault();
+            event.target.classList.toggle('block');
+            document.querySelector('.wine-list').classList.toggle('block');
+        }
+
+        function clickFilter(event) {
+            let targetFilter = event.target;
+            let targetSiblings;
+            let secondDepth = document.querySelector('.second');
+            let selectedCondition = document.querySelector('.selected-condition');
+            let isActive;
+
+            targetSiblings = Array.prototype.filter.call(targetFilter.parentElement.children, function(e){ return e !== targetFilter;});
+
+            for(const targetSibling of targetSiblings) {
+                targetSibling.classList.remove('active');
+            }
+            targetFilter.classList.toggle('active');
+
+            isActive = targetFilter.classList.contains('active');
+
+            if( isActive ) {
+                targetFilter.classList.add('active');
+                secondDepth.classList.add('active');
+                if(selectedCondition.classList.contains('active')) {
+                    secondDepth.classList.remove('top');
+                } else {
+                    secondDepth.classList.add('top');
+                }
+            } else {
+                targetFilter.classList.remove('active');
+                secondDepth.classList.remove('active');
+            }
+        }
+
+        function closeFilter(event) {
+            let targetFilter = event.target;
+            let secondDepth = document.querySelector('.second');
+            let firstButtons = document.querySelectorAll('.first button');
+
+            for(const button of firstButtons) {
+                button.classList.remove('active');
+            }
+
+            targetFilter.classList.remove('active');
+            secondDepth.classList.remove('active');
+        }
+
+        function scrollFilter(event) {
+            let targetFilter = event.target;
+            let firstDepth = document.querySelector('.first');
+            let positionL = targetFilter.getBoundingClientRect().left,
+                thisWidth = targetFilter.offsetWidth / 2,
+                center = firstDepth.offsetWidth / 2,
+                toScrollL = 0;
+            let presentScrollLeft;
+
+            presentScrollLeft = firstDepth.scrollLeft;
+            toScrollL = presentScrollLeft + positionL - (center - thisWidth);
+
+            firstDepth.scroll({
+                left: toScrollL,
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        </script>
+    </body>
+</html>

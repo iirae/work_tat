@@ -1,0 +1,51 @@
+.f-radio, .f-chk {
+    & + label {
+      cursor: pointer;
+    //   -webkit-tap-highlight-color: transparent;
+    //   outline: none;
+    }
+    input {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        margin: -1px;
+        width: 1px; 
+        height: 1px;
+        border: 0 !important;
+        outline-style: none;
+        -webkit-appearance: none;
+    }
+    
+}
+
+.f-group {
+    display: flex;
+    flex-wrap: wrap;
+    &.type-button {
+        .f-radio, .f-chk {
+            margin: {
+                top: 5px;
+                right: 5px;
+            }
+            label {
+                display: inline-block;
+                padding: 0 10px;
+                height: 26px;
+                line-height: 24px;
+                color: $color-primary;
+                border: 1px solid $color-primary;
+                background: transparent;
+                box-sizing: border-box;
+                border-radius: 12px;
+                transition: all 0.25s ease;
+            }
+            input {
+                &:checked + label {
+                    color: $color-text-default;
+                    border-color: $color-gray-300;
+                    background: $color-gray-300;
+                }
+            }
+        }
+    }
+}

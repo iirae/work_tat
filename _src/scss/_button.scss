@@ -1,0 +1,47 @@
+.btn-icon {
+    display: inline-block;
+    background: {
+        repeat: no-repeat;
+        position: center;
+    }
+
+    &.reset {
+        background-image: url("../images/btn_icon_reset.svg");
+        background-size: 17px auto;
+    }
+    &.delete {
+        width: 14px;
+        height: 20px;
+        background-image: url("../images/btn_icon_delete.svg");
+        background-size: 6px auto;
+    }
+    &.close {
+        width: 13px;
+        height: 13px;
+        background-image: url("../images/btn_icon_close.svg");
+        background-size: 13px auto;
+    }
+    &.list-type {
+        width: 17px;
+        height: 17px;
+        background-image: url("../images/btn-icon-list.svg");
+        background-size: 17px auto;
+        &.block {
+            background-image: url("../images/btn-icon-list-photo.svg");
+        }
+    }
+    &.instagram {
+        width: 17px;
+        height: 17px;
+        background-image: url("../images/btn-icon-instagram.svg");
+        background-size: 17px auto;
+    }
+    &.back span {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #838281;
+        border-width: 0 0 2px 2px;
+        transform: rotate(45deg);
+    }
+}

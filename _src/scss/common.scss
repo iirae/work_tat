@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@import "_fonts";
+@import "_reset";
+@import "_mixin";
+
+@import "_layout";
+@import "_form";
+@import "_button";
+@import "_icon";
+@import "_swiper";
+@import "_page";
+
+
+body{background: $color-wh;}
+body,th,td,input,select,textarea,button,pre{font-size:10px; line-height:1.25; font-family:$font-notosans;color:$color-text-default;}
+// .noto {
+//     &,th,td,input,select,textarea,button{font-size:10px; line-height:1.25; font-family:$font-notosans; color:$color-text-default;}
+// }
+// .device {
+//     &,th,td,input,select,textarea,button{font-size:10px; line-height:1.25; font-family:$font-device; color:$color-text-default;}
+// }
+
+a{color: $color-text-default;}
+
+.blind {
+    overflow: hidden;  
+    position: absolute; 
+    clip: rect(0 0 0 0); 
+    margin: -1px; 
+    width: 1px; 
+    height: 1px; 
+    color: transparent;
+}
+
+.notch {
+    position: fixed;
+    left:0;
+    right:0;
+    bottom: env(safe-area-inset-bottom);
+    bottom: constant(safe-area-inset-bottom);
+    background: #f8f8f8;
+}
+
+pre {
+    white-space: pre-wrap; 
+}

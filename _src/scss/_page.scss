@@ -1,0 +1,197 @@
+.p-notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: $color-primary-light;
+    text-align: center;
+    background: #fdfaea;
+    .logo {
+        display: inline-block;
+        margin: 0 auto;
+        width: 235px;
+    }
+    .mt-40 {
+        margin-top: 40px;
+    }
+    .desc {
+        margin-top: 13px;
+        color: $color-primary-light;
+        strong {
+            font-size: 14px;
+            line-height: 1.39;
+            font-weight: 600;
+        }
+    }
+}
+.p-detail {
+    // padding-bottom: 81px;
+    .header {
+        background-color: $color-wh;
+        .name {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding: 0 13px 0 0;
+            height: 40px;
+            font-size: 14px;
+            color: $color-bk;
+            line-height: 40px;
+            font-weight: 400;
+        }
+    }
+    .visual {
+        position: relative;
+        // img {
+        .swiper {
+            width: 100%;
+            border: 5px solid $color-primary;
+            border-bottom-width: 0;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .badges {
+            z-index: 30;
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            display: inline-flex;
+        }
+        .badge {
+            margin-right: 4px;
+            padding: 8px 6px;
+            font-size: 10px;
+            color: #fefefe;
+            font-weight: 600;
+            white-space: nowrap;
+            background-color: $color-primary;
+        }
+    }
+    .details {
+        padding: {
+            top: 20px;
+            left: 12px;
+            right: 12px;
+            bottom: 50px;
+        }
+        .name {
+            font-size: 20px;
+            color: $color-bk;
+            font-weight: 600;
+        }
+        .group {
+            display: flex;
+            margin-top: 18px;
+            li {
+                margin-right: 7px;
+            }
+        }
+        .area {
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 3px 0 8px;
+            border-bottom: 5px solid $color-primary;
+            h3 {
+                font-size: 10px;
+                color: $color-primary;
+                font-weight: 600;
+            }
+            .location {
+                margin-left: 6px;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                font-size: 18px;
+                color: #fefefe;
+                font-weight: 600;
+                text-align: center;
+                background-color: $color-primary;
+            }
+        }
+        .description {
+            padding: 13px 0 0;
+            h3 {
+                margin-bottom: 29px;
+                font-size: 13px;
+                color: $color-primary;
+                font-weight: 600;
+            }
+            div, p, pre {
+                font-size: 12px;
+                color: $color-bk;
+                line-height: 1.91;
+                // word-break: break-word;
+            }
+        }
+        .features {
+            margin-top: 40px;
+            padding: 10px 0 0;
+            dl, div {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 12px;
+                color: $color-bk;
+                line-height: 1.5;
+            }
+            dl {
+                 & + dl {
+                     margin-top: 27px;
+                 }
+            }
+            dt {
+                flex: 0 0 auto;
+                width: 40px;
+                color: #c72127;
+                font-weight: 600;
+            }
+            dd {
+                flex: 0 0 auto;
+                width: calc(100% - 40px);
+            }
+            div {
+                width: 100%;
+                & + div {
+                    margin-top: 10px;
+                }
+            }
+            .val {
+                display: flex;
+                align-items: center;
+                span {
+                    flex: 0 0 auto;
+                    width: 50px;
+                    height: 5px;
+                    background-color: #f4f3ed;
+                    & + span {
+                        margin-left: 2px;
+                    }
+                }
+                @media screen and (max-width: 320px) {
+                    span {
+                        width: 40px;
+                    }
+                }
+                
+                @for $i from 1 through 5 {
+                    &.val-#{$i} {
+                        @for $j from 1 through $i {
+                            span:nth-of-type(#{$j}) {
+                                background-color: #c72127;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .footer {
+    //     position: fixed;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    // }
+}

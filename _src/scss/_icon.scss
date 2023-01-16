@@ -1,0 +1,19 @@
+.icon {
+    display: inline-block;
+    background: {
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+    }
+
+    &.wine {
+        width: 91px;
+        height: 59px;
+        background-image: url("../images/ico_wine.svg");
+    }
+    &.tat {
+        width: 110px;
+        height: 138px;
+        background-image: url("../images/ico_tat.svg");
+    }
+}
